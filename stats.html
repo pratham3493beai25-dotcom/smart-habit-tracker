@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Statistics - Habit Tracker</title>
+ <link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">
+      <h2>📊 Habit Tracker</h2>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Dashboard</a>
+      <a href="habits.html">Habits</a>
+      <a href="stats.html" class="active">Stats</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+  <section class="welcome">
+    <h1>Statistics</h1>
+    <p>Your habit performance overview.</p>
+  </section>
+
+  <!-- OVERALL -->
+  <section class="card center">
+    <h2>📊 Overall Completion</h2>
+    <h1 id="overallCompletion" class="massive-text">0%</h1>
+  </section>
+
+  <!-- PERFORMANCE -->
+  <section class="card">
+    <h2>🔥 Habit Performance</h2>
+    <div id="habitPerformance"></div>
+  </section>
+
+  <!-- BUTTONS -->
+  <section class="buttons">
+    <button onclick="exportData()" class="btn primary">📤 Export Data</button>
+    <button onclick="resetAllData()" class="btn danger">🗑 Reset All Data</button>
+  </section>
+</main>
+<script src="script.js"></script>
+<script src="stats.js"></script>
+</body>
+</html>
+</body>
+</html>
